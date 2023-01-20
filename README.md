@@ -15,7 +15,7 @@ A way to _run and debug_ simple go application
 - PostgreSQL
 
 ## How to run it?
-### Debug mode (The one I frequently use)
+### Debug mode 
 ```bash
 docker-compose -f ./docker-compose.debug.yaml up
 ```
