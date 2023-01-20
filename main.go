@@ -1,7 +1,7 @@
 package main
 
 import (
-	"asiam.io/auth/src/api"
+	"github.com/A-Siam/go_auth/src/api"
 	"github.com/gin-gonic/gin"
 )
 
