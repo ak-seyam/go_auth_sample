@@ -1,0 +1,8 @@
+FROM golang:1.19.4-bullseye
+WORKDIR /app
+
+ENV CGO_ENABLED=0
+
+WORKDIR /app/test
+
+CMD [ "go", "test" ]
