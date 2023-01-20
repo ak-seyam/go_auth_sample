@@ -1,5 +1,0 @@
-FROM golang:1.19.4-bullseye
-WORKDIR /app
-EXPOSE 8899
-
-CMD CGO_ENABLED=0 go build -o /app/bin/be; /app/bin/be
