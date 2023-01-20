@@ -1,18 +1,6 @@
 version: '3.8'
 services:
 
-  pgdb:
-    image: postgres:14.1-alpine
-    restart: always
-    environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DB=clipgear
-    ports:
-      - '5432:5432'
-    volumes: 
-      - pgdb_v:/var/lib/postgresql/data
-  
   be_dev:
     build: 
       context: .
@@ -30,7 +18,3 @@ services:
       dockerfile: ./dockerfile.dev.test
     volumes:
       - ".:/app"
-
-volumes:
-  pgdb_v:
-    
