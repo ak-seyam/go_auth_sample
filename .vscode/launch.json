@@ -2,7 +2,6 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "preLaunchTask": "start_debug_containers",
             "name": "Run with debug",
             "type": "go",
             "request": "attach",
@@ -11,7 +10,6 @@
             "host": "127.0.0.1"
         },
 		{
-            "preLaunchTask": "start_debug_containers",
             "name": "Test with debug",
             "type": "go",
             "request": "attach",

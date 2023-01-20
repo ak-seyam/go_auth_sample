@@ -17,36 +17,5 @@
                 "close": true
             }
         },
-        {
-            "label": "start_debug_containers",
-            "command": "docker-compose",
-            "args": [
-                "-f",
-                "${workspaceFolder}/docker-compose.debug.yaml",
-                "up",
-                "-d",
-            ],
-            "type": "shell",
-            "presentation": {
-                "reveal": "silent",
-                "revealProblems": "onProblem",
-                "close": true
-            }
-        },
-        {
-            "label": "close docker containers",
-            "command": "docker-compose",
-            "args": [
-                "-f",
-                "${workspaceFolder}/docker-compose.debug.yaml",
-                "down"
-            ],
-            "type": "shell",
-            "presentation": {
-                "reveal": "silent",
-                "revealProblems": "onProblem",
-                "close": true
-            }
-        }
     ]
 }
